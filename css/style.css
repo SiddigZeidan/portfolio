@@ -6056,24 +6056,15 @@ body {
     text-transform: uppercase;
     font-size: 20px;
     color: #333; }
+    .l-nav a:hover {
+      text-decoration: none !important;
+      cursor: pointer;
+      opacity: 0.4; }
   .l-nav .navbar-right {
     width: 100px;
-    padding: 11px 16px;
+    padding: 0 16px;
     text-align: center;
-    float: left;
-    background: transparent;
-    /* Old browsers */
-    background: linear-gradient(to right, transparent 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    margin-left: 10px;
-    transition: all 0.8s ease; }
-  .l-nav .navbar-right:hover {
-    background-position: right bottom;
-    border: 1px solid #fff;
-    padding: 10px 16px;
-    color: #333;
-    text-decoration: none; }
+    margin-left: 10px; }
 
 .l-main section {
   background-repeat: no-repeat;
@@ -6101,8 +6092,9 @@ body {
   max-width: 650px;
   position: absolute;
   top: 0;
-  right: 50%;
-  top: 25%; }
+  left: 25%;
+  top: 25%;
+  margin-left: -221px; }
   .l-main .project-details h2 {
     font-size: 30px; }
   .l-main .project-details p {
@@ -6441,10 +6433,10 @@ figure.effect-dexter:hover p {
   transition: all 1s ease;
   color: #fff !important; }
 
-#close-button {
+a#close-button {
   position: absolute;
   right: 0;
-  font-size: 20px;
+  font-size: 40px;
   color: #fff;
   top: 0;
   z-index: 1000;
@@ -6454,7 +6446,18 @@ figure.effect-dexter:hover p {
   right: 85px;
   cursor: pointer;
   height: 35px;
-  width: 35px; }
+  width: 35px;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1); }
+  a#close-button:hover {
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 /* ---- stats.js ---- */
 .count-particles {

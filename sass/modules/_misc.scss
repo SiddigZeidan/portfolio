@@ -190,10 +190,10 @@ figure.effect-dexter:hover p {
 
 }
 
-#close-button{
+a#close-button{
 	position: absolute;
 	right: 0;
-	font-size: 20px;
+	font-size: 40px;
 	color: $white;
 	top: 0;
 	z-index: 1000;
@@ -204,5 +204,17 @@ figure.effect-dexter:hover p {
     cursor: pointer;
     height: 35px;
     width: 35px;
+        transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transition: all 400ms cubic-bezier(.165,.84,.44,1);
+    -o-transition: all 400ms cubic-bezier(.165,.84,.44,1);
+    -webkit-transition: all 400ms cubic-bezier(.165,.84,.44,1);
+    transition: all 400ms cubic-bezier(.165,.84,.44,1);
+    &:hover{
+       -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+    }
 }
 
