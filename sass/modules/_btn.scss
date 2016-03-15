@@ -1,0 +1,24 @@
+// =============================================================================
+// Button Styles
+// =============================================================================
+
+
+
+.btn{
+	padding: 15px 30px;
+	color: #fff;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.koh .btn, .sltf .btn{
+	background: $gold;
+	color: $black;
+}
+
+.rainbowmile .btn{
+	background: $pink;
+}
+
+
+

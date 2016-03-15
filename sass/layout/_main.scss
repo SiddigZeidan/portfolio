@@ -1,0 +1,144 @@
+// =============================================================================
+// Main Styles
+// =============================================================================
+
+
+
+.l-main{
+	section{
+
+	background-repeat: no-repeat;
+  overflow: hidden;
+    background-position: center !important; 
+        transition: all 0.5s ease;
+    background-position: center !important;
+    position: relative;
+
+
+	}
+
+  .background-image-container{
+    background-size: cover;
+    min-height: 602px;
+      -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;  
+  }
+
+  section.intro{
+  padding: 100px 0;
+  }
+
+	.project-details{
+	color: #fff;
+    padding: 30px 10px;
+    max-width: 650px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    top: 25%;
+
+
+	h2{
+	font-size: 30px;
+	}
+	p{
+	font-size: 14px
+	}
+	}
+
+	.white-line{
+	height: 10px;
+	}
+
+}
+
+.background {
+  @include position(absolute, 0px 0px 0px 0px);
+}
+
+.blue-purple {
+  @include linear-gradient(to right, #1D2B64, #F8CDDA);
+  @include animation(fadeInOut 25s ease);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(infinite);
+}
+
+.green-blue {
+  @include linear-gradient(to right, #43cea2, #185a9d);
+  @include animation(fadeOutIn 25s ease);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(infinite);
+}
+
+@include keyframes(fadeInOut) {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(fadeOutIn) {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeOut) {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.svg-wrapper {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -36px;
+  margin-left: -136px;
+}
+
+#carpenter-white {
+  fill: #fff;
+  opacity: 0;
+  @include animation(fadeIn 2s ease);
+  @include animation-delay(2s);
+  @include animation-fill-mode(forwards);
+}
+
+#carpenter-logo {
+  stroke: rgba(255,255,255,0.5);
+  stroke-width: 1.25px;
+  @include animation(fadeOut 1s ease);
+  @include animation-delay(2.75s);
+  @include animation-fill-mode(forwards);
+}
+
+
+

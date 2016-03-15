@@ -1,0 +1,29 @@
+// =============================================================================
+// Base Styles
+// =============================================================================
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $font-1;
+	font-weight: bold;
+}
+
+body{
+	font-family: $font-1;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+.intro-text{
+	font-size: 28px;
+	line-height: 55px;
+	font-weight: bold;
+	
+}
+
+
+
